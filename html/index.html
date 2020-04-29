@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.15/esri/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="https://js.arcgis.com/4.15/"></script>
+    <!--1-get refrence to ArcGIS script-->
+    <title>COVID-19</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-light bg-light ">
+        <a class="navbar-brand" href="#">
+            <img src="/resources/virusLogo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <strong>COVID-19 Dashboard</strong>
+        </a>
+    </nav>
+    <div class="container-fluid row">
+        <div id="map" class="col-8"></div>
+        <div class="col-4">
+            <div class="col-12">
+                <canvas id="barChart"></canvas>
+            </div>
+            <div class="col-12 ">
+                <canvas id="pieChart"></canvas>
+            </div>
+        </div>
+        <select id="countriesddl">
+            <option value="0">
+                All Countries
+            </option>
+        </select>
+
+    </div>
+
+
+
+
+
+    <script src="/js/esri.js"></script>
+    <script src="/js/repository.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
